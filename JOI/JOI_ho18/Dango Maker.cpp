@@ -61,7 +61,7 @@ int main() {
 				dp[j][2]=max(dp[j-1][2], dp[j-1][0])+1;
 			if(t==0)
                 ans+=max({dp[j][0], dp[j][1], dp[j][2]});
-                j++;
+            j++;
 			//cout<<j<<' '<<x<<' '<<y<<' '<<ok(x, y)<<' '<<ok1(x, y)<<' '<<dp[j][0]<<' '<<dp[j][1]<<' '<<dp[j][2]<<endl;
 		}
         //cout<<ans<<endl;
